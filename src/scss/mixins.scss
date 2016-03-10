@@ -1,0 +1,7 @@
+@mixin transition-opacity($time) {
+ 	-webkit-transition: opacity $time linear;
+	-moz-transition: opacity $time linear;
+	-ms-transition: opacity $time linear;
+	-o-transition: opacity $time linear;
+	transition: opacity $time linear;
+}

@@ -1,0 +1,138 @@
+/* +++ boilerplate + normalize +++ */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul            { list-style: none; }
+blockquote, q     { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table             { border-collapse: collapse; border-spacing: 0; }
+html, body        { color: #222; font-size: 15px; line-height: 1.4; font-family: arial}
+::-moz-selection  { text-shadow: none; }
+::selection       { text-shadow: none; }
+audio, canvas, iframe, img, svg, video { vertical-align: middle; }
+
+.hidden           { display: none !important; }
+.clearfix:before, .clearfix:after { content: " "; /* 1 */ display: table; /* 2 */ }
+.clearfix:after   { clear: both; }
+
+/* --- boilerplate + normalize --- */
+
+body {
+	margin: 0 auto;
+	padding: 100px 0 0;
+	min-width: 940px;
+	min-height: 100%;
+	-webkit-transition: padding .1s; 
+	-moz-transition: padding .1s; 
+	-ms-transition: padding .1s; 
+	-o-transition: padding .1s; 
+	transition: padding .1s;
+	//background-image: url('../img/bg-home-blue-main.png'), url('../img/bg-holliday-ny.jpg');
+	background-image: url('../img/bg-holliday-ny.jpg');
+	background-repeat: repeat;
+	background-color: #CBE0D1;
+	&.scrolling{
+		padding: 80px 0 0;
+		.header{
+			.header-content{
+				padding: 0 20px;
+			}
+		}
+	}
+	&.no-scroll{
+		overflow: hidden;
+	}
+}
+
+.promo-tile{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	&.mic{
+		background-image: url('../img/promo-microphone.png');
+		top: 140px;
+		left: 305px;
+		width: 80px;
+	}
+	&.mic-big{
+		background-image: url('../img/promo-microphone-big.png');
+	    top: -7px;
+	    left: 772px;
+	    width: 60px;
+	}
+	&.mic-stand{
+		background-image: url('../img/promo-microphone-stand.png');
+		background-image: url("../img/promo-microphone-stand.png");
+		top: 67px;
+		left: 869px;
+		height: 516px;
+		width: 208px;
+		display: none !important;
+	}
+	&.camera{
+		background-image: url('../img/promo-camera.png');
+		top: 80px;
+		left: 45px;
+	}
+	&.mail{
+		background-image: url('../img/promo-mail.png');
+		top: 110px;
+		left: 60px;
+		width: 110px;
+		height: 110px;
+	}
+	&.email{
+		background-image: url('../img/promo-email.png');
+		    top: 60px;
+		    left: 420px;
+		    width: 80px;
+		    height: 80px;
+	}
+	&.phone{
+		background-image: url('../img/promo-phone.png');
+		top: 490px;
+		left: 610px;
+		width: 110px;
+		display: none !important;
+	}
+	&.internet{
+		background-image: url('../img/promo-internet.png');
+		top: 10px;
+		left: 800px;
+		width: 80px;
+		height: 80px;
+	}
+	&.event-home-ny{
+		background-image: url('../img/promo-home-event-ny.png');
+		top: 11px;
+		left: 121px;
+		width: 137px;
+		height: 101px;
+	}
+	&.event-contacts-ny{
+		background-image: url('../img/promo-contacts-event-ny.png');
+		top: 29px;
+		left: 212px;
+		width: 140px;
+		height: 162px;
+	}
+	&.event-contacts-ny-santa-box{
+		background-image: url('../img/promo-contacts-event-ny-santa-box.png');
+		top: 320px;
+		left: 351px;
+		width: 208px;
+		height: 205px;
+	}
+}

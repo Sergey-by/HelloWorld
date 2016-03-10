@@ -1,0 +1,109 @@
+.contacts-block-wrapper{
+	width: 100%;
+	background: url('../img/bg-home-blue.png') repeat-x;
+	.contacts-block{
+		width: 940px;
+		font-size: 0;
+		margin: 0 auto;
+		padding-top: 58px;
+		position: relative;
+		div{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.contacts-block-image{
+			width: 510px;
+			img{
+				height: 545px;
+			}
+		}
+		.contacts-block-content{
+			vertical-align: middle;
+			width: 400px;
+			margin: 50px 0 0 20px;
+			.contacts-container-wrapper{
+				width: 400px;
+				background: url('../img/bg-hp-video-white.png') no-repeat;
+				background-size: 100% 100%;
+    			background-repeat: no-repeat;
+    			.contacts-container{
+    				margin: 20px 15px;
+    				width: 370px;
+    				//background-color: rgba(0, 0, 0, .1);
+    				border-radius: 3px;
+    				.contact-block-element{
+    					//background-color: green;
+    					display: block;
+    					position: relative;
+    					width: 90%;
+    					margin: 5px auto;
+    					padding: 10px 0 15px 10px;
+    					.contact-title{
+    						font-size: 14px;
+    						color: #e3594c;
+    						font-weight: bold;
+    					}
+    					a.contact-content{
+    						display: block;
+    						font-size: 18px;
+    						color: #838383;
+    						text-decoration: none;
+    						&.inline-contact-element{
+	    						display: inline-block;
+	    						line-height: 15px;
+	    						margin-top: 10px;
+	    					}
+	    					&.with-line{
+	    						position: relative;
+	    						margin-right: 20px;
+	    						&:after{
+	    							content: '';
+	    							position: absolute;
+	    							width: 2px;
+	    							height: 15px;
+	    							top: 0;
+	    							right: -11px;
+	    							background-color: #BFBFBF;
+
+	    						}
+	    					}
+
+    					}
+    					.vertical-line{
+							display: inline-block;
+							margin: 10px 9px 0px 9px;
+						    width: 2px;
+						    height: 15px;
+							background-color: red;
+						}
+    					
+						&:after{
+    						display: block;
+    						position: absolute;
+    						width: 100%;
+    						height: 4px;
+    						left: 0;
+    						bottom: -4px;
+    						content: '';
+    						background: url('../img/bg_contacts_elements_line.png') repeat-x;
+    					}
+    					&:last-child{
+    						&:after{
+    							display: none;
+    						}
+    					}
+    				}	
+    			}
+			}
+		}
+	}
+	.map-block{
+		width: 940px;
+		margin: 30px auto;
+		border: 1px solid lightgray;
+		iframe{
+			width: 940px;
+			height: 300px;
+		}
+	}
+}

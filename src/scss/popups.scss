@@ -1,0 +1,59 @@
+.popups{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	// background-color: rgba(85, 108, 113, .8);
+	background-color: rgba(0, 0, 0, .7);
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+	&.active{
+		display: block;
+	}
+	&.vote-me-popup-wrapper{
+		.close-button{
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			width: 50px;
+			height: 50px;
+			background: url('../img/popup-close-button.png') no-repeat;
+			cursor: pointer;
+		}
+		.vote-me-popup{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -160px;
+			margin-left: -280px;
+			height: 370px;
+			width: 600px;
+			background: url('../img/bg-hp-video-white.png') no-repeat;
+			background-size: 600px 370px;
+			.popup-content{
+				// height: 265px;
+				// width: 520px;
+				margin: 20px 15px;
+				background-color: rgb(85, 108, 113);
+				text-align: center;
+				border-radius: 3px;
+				padding: 10px 0;
+				p{
+					color: white;
+					font-size: 18px;
+					line-height: 22px;
+					padding: 5px 10px;
+					&.title{
+						//background-color: #547982;
+						padding: 10px 0;
+					}
+				}
+				a{
+					text-decoration: none;
+					color: darkgray;
+				}
+			}
+		}
+	}
+}

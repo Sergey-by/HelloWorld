@@ -1,0 +1,118 @@
+@mixin transition-opacity($time) {
+ 	-webkit-transition: opacity $time linear;
+	-moz-transition: opacity $time linear;
+	-ms-transition: opacity $time linear;
+	-o-transition: opacity $time linear;
+	transition: opacity $time linear;
+}
+.promo-gallery{
+	width: 940px;
+	margin: 50px auto;
+	background-repeat: no-repeat;
+	position: relative;
+	.gallery-row{
+		width: 100%;
+		padding: 0 10px;
+		font-size: 0;
+		margin-bottom: 1px;
+		.gallery-item{
+			width: 262px;
+			height: 180px;
+			display: inline-block;
+			margin-right: 1px;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+
+			&:before{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include transition-opacity(.3s);
+				&.half-width{
+					width: 131px;
+				}	
+			}
+			&:hover{
+				&:before{
+					opacity: .3;
+				}
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+			&.half-width{
+				width: 131px;
+			}
+		}
+	}
+}
+.gallery-image-contaier{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 920px;
+	height: 540px;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+	.image-contaier-wrapper{
+		width: 640px;
+	    height: 440px;
+	    background-color: white;
+	    position: absolute;
+	    top: 30px;
+	    left: 120px;
+	    padding: 20px;
+	    z-index: 100;
+		.close-button{
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			width: 30px;
+			height: 30px;
+			background-image: url('../img/btn-gallery-close.png');
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+		.gallery-spinner{
+			width: 80px;
+			height: 80px;
+			background-image: url('../img/spinner.gif');
+			background-size: contain;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -40px;
+			margin-left: -40px;
+			opacity: 1; 
+			@include transition-opacity(.3s);
+		}
+		.image-as-is{
+			opacity: 0;
+			margin: auto;
+			display: block;
+			max-height: 440px;
+			max-width: 760px;
+			@include transition-opacity(.3s);
+		}
+		&.image-loaded{
+			.image-as-is{
+				opacity: 1;
+			}
+			.gallery-spinner{
+				opacity: 0;
+			}
+		}
+	}
+
+}

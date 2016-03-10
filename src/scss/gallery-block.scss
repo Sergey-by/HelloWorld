@@ -1,0 +1,50 @@
+.gallery-wrapper{
+	.gallery{
+		width: 940px;
+		margin: 0 auto;
+		.gallery-item{
+			margin: 20px 0;
+			padding-top: 30px;
+			.gallery-heading{
+				margin-bottom: 10px;
+				.gallery-heading-image{
+					//width: 150px;
+					height: 150px;
+					margin-right: 10px;
+					img{
+						height: 100%;
+						width: auto;
+					}
+				}
+				.gallery-heading-text{
+					vertical-align: bottom;
+					max-width: 750px;
+					h2{
+						font-size: 28px;
+						line-height: 32px;
+    					margin-bottom: 5px;
+					}
+					h3{
+						font-size: 18px;
+					}
+				}
+				div{
+					display: inline-block;
+				}
+
+			}
+			.gallery-content{
+				font-size: 0;
+				.gallery-content-item{
+					margin: 1px;
+					display: inline-block;
+					img{
+						height: 100px;
+						width: 135px;
+					}
+				}
+			}
+
+		}
+	}
+}

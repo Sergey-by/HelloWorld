@@ -1,0 +1,72 @@
+.home-promo-wrapper{
+	width: 100%;
+	background: url('../img/bg-home-blue.png') repeat-x;
+	.home-promo{
+		height: 600px;
+		width: 940px;
+		margin: 0 auto;
+		padding: 0 20px;
+		font-size: 0;
+		position: relative;
+		div{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.home-promo-img{
+			width: 360px;
+			padding: 30px 10px;
+			img{
+				width: 348px;
+			}
+			.home-promo-bubbles{
+				position: absolute;
+				background-image: url('../img/home-promo-bubbles.png');
+				background-repeat: no-repeat;
+				width: 161px;
+				height: 81px;
+				top: 30px;
+				left: 270px;
+			}
+		}
+		.home-promo-content{
+			.home-promo-video{
+				height: 325px;
+				width: 560px;
+				background: url('../img/bg-hp-video-white.png') no-repeat;
+				iframe{
+					height: 295px;
+					width: 525px;
+					margin: 15px;
+				}
+			}
+			.home-promo-title{
+				width: 560;
+				height: 160px;
+				margin-top: 10px;
+				padding-top: 55px;
+				margin-bottom: 10px;
+				background-image: url('../img/promo-title-wrapper.png');
+				display: block;
+				background-size: contain;
+	    		background-repeat: no-repeat;
+	    		h2{
+				    width: 480px;
+				    font-size: 15px;
+				    //color: #4e4e4e;
+				    text-align: center;
+				    margin-left: 30px;
+				    line-height: 17px;
+				    color: #C10000;
+				    font-weight: bold;
+				    &.title{
+					    margin-left: 37px;
+					    width: 260px;
+					    font-size: 19px;
+					    line-height: 28px;
+
+				    }
+	    		}
+			}
+		}	
+	}
+}

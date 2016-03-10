@@ -1,0 +1,50 @@
+body{
+	&.theme{
+		&.new-year{
+			.home-promo-wrapper{
+				background: none;
+				//background-color: rgba(0, 0, 0, .7);
+				.home-promo{
+					//background-color: rgba(0, 0, 0, .05);
+				}
+			}
+			.contacts-block-wrapper{
+				background: none;
+			}
+			.promo-gallery{
+				//background-color: rgba(0, 0, 0, .1);
+			}
+			.red-line-promo{
+				position: absolute;
+				width: 100%;
+				.red-line-block{
+						width: 100%;
+						height: 11px;
+						background-color: #b00512;
+					}
+				.red-line-content{
+					width: 940px;
+					margin: 0 auto;
+					position: relative;
+					
+					.red-line-img{
+						width: 269px;
+						height: 162px;
+						position: absolute;
+						top: -126px;
+						background: url('../img/themes/new-year/ny-line-tree.png') no-repeat;
+						&.right{
+							right: 0;
+							-moz-transform: scaleX(-1);
+					        -o-transform: scaleX(-1);
+					        -webkit-transform: scaleX(-1);
+					        transform: scaleX(-1);
+					        filter: FlipH;
+					        -ms-filter: "FlipH";
+						}
+					}
+				}
+			}
+		}
+	}
+}

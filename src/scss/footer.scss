@@ -1,0 +1,122 @@
+.footer-wrapper{
+	background-color: rgb(76, 76, 76);
+	width: 100%;
+	.footer{
+		width: 940px;
+		margin: 0 auto;
+		height: 300px;
+		padding: 0 20px;
+		background: url('../img/bg-footer-person.png') no-repeat;
+		.footer-contacts-block{
+			height: 300px;
+			width: 600px;
+			margin-left: 300px;
+			.footer-navigation{
+				padding: 5px 0;
+				margin: 0 auto;
+				width: 500px;
+				background-image: url("../img/bg-footer-copyright-delimiter.png");
+				background-repeat: no-repeat;
+				background-position-y: 32px;
+				ul.footer-nav-list{
+					text-align: center;
+					li{
+						display: inline-block;
+						margin: 0 5px;
+						a{
+							color: #e7e7e7;
+							text-decoration: none;
+							font-size: 18px;
+							&:hover{
+								color: white;
+							}
+						}
+					}
+				}
+			}
+			.social-icons-line{
+				padding: 25px 20px 20px 20px;
+				.item{
+					display: inline-block;
+					height: 75px;
+					width: 85px;
+					text-decoration: none;
+					.item-icon{
+						height: 50px;
+						width: 50px;
+						margin: 0 auto;
+						overflow: hidden;
+						background-image: url('../img/social_icons/icons-footer.png');
+						background-repeat: no-repeat;
+						&.vkontakte{
+							background-position-x: -50px;
+						};
+						&.facebook{
+							background-position-x: -100px;
+						};
+						&.instagram{
+							background-position-x: -150px;
+						};
+						&.you-tube{
+							background-position-x: -200px;
+						};
+						&.skype{
+							background-position-x: -250px;
+						};
+					};
+					p{
+						color: #9a9a9a;
+						width: 100%;
+						text-align: center;
+					};
+
+				
+					&:hover{
+						.item-icon{
+							background-position-y: -50px;
+						};
+						p{
+							color: #bcbcbc;
+						};
+					};
+				};
+			};
+			.footer-promo-text{
+				padding: 0px 20px;
+				color: #e7e7e7;
+				margin: 0 auto;
+				font-size: 18px;
+				width: 380px;
+				text-align: center;
+				line-height: 26px;
+			}
+			.footer-contacts-text{
+				margin: 20px auto;
+				width: 525px;
+				a{
+					display: inline-block;
+					color: white;
+					font-size: 18px;
+					text-decoration: none;
+					margin: 0 10px;
+					color: #e7e7e7;
+				}
+			}
+			.footer-copyright{
+				background-image: url("../img/bg-footer-copyright-delimiter.png");
+				background-repeat: no-repeat;
+				margin: 20px auto 0 auto;
+				display: block;
+				padding-top: 5px;
+    			width: 500px;
+				span{
+					color: #9a9a9a;
+					display: block;
+					text-align: center;
+
+				}
+			}
+		}
+		
+	}
+}
